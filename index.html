@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>To-Do List</h1>
+            <input type="text" id="search-bar" placeholder="🔍 Search tasks..." />
+        </header>
+        <main>
+            <div class="input-section">
+                <div class="task-input">
+                    <input type="text" id="task-input" placeholder="Enter a new task" />
+                    <select id="category-select">
+                        <option value="">Select Category</option>
+                    </select>
+                    <button id="add-task-btn">Add Task</button>
+                </div>
+                <div class="category-input">
+                    <input type="text" id="category-input" placeholder="Add new category" />
+                    <button id="add-category-btn">Add Category</button>
+                </div>
+            </div>
+            <div class="filter-section">
+                <label for="filter-category">Filter by category:</label>
+                <select id="filter-category">
+                    <option value="">All Categories</option>
+                </select>
+            </div>
+            <ul id="task-list"></ul>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
